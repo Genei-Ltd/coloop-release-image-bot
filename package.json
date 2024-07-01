@@ -1,0 +1,31 @@
+{
+  "name": "coloop-release-image-bot",
+  "version": "1.0.0",
+  "description": "A bot that reminds you to add a release image",
+  "author": "Kelvin Porter",
+  "license": "MIT",
+  "homepage": "https://github.com/Genei-Ltd/coloop-release-image-bot",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "probot run ./lib/index.js"
+  },
+  "dependencies": {
+    "probot": "^13.0.1",
+    "@probot/adapter-aws-lambda-serverless": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "nock": "^14.0.0-beta.5",
+    "smee-client": "^2.0.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">= 20"
+  },
+  "type": "module"
+}
