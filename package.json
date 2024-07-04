@@ -15,10 +15,10 @@
     "start": "probot run ./lib/index.js"
   },
   "dependencies": {
-    "probot": "^13.0.1"
+    "probot": "^13.0.1",
+    "@probot/adapter-aws-lambda-serverless": "^4.0.0"
   },
   "devDependencies": {
-    "@probot/adapter-aws-lambda-serverless": "^4.0.0",
     "@types/node": "^20.0.0",
     "nock": "^14.0.0-beta.5",
     "smee-client": "^2.0.0",
