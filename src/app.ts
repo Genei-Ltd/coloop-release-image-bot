@@ -37,7 +37,7 @@ const hasReleaseImage = (body: string): boolean => {
 
   const nextLine = lines[imageIndex + 1]?.trim()
 
-  if (nextLine === 'N/A') return true
+  if (nextLine?.toLowerCase() === 'n/a') return true
 
   const imageRegex = /(.*\/assets.*|\.(png|jpg|jpeg|gif|mp4|mov|avi|mkv|webm))/i
 
